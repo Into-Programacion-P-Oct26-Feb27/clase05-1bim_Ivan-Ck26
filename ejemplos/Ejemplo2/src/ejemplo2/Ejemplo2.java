@@ -22,14 +22,20 @@ public class Ejemplo2 {
     /**
      * @param args the command line arguments
      */
+    
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
         // Condicionales compuestos
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US); // 10,2 / 10.2
         double promedio;
         String miNombre;
+        
         System.out.println("Ingrese el nombre por favor");
         miNombre = entrada.nextLine();
+        
         System.out.println("Ingrese el promedio por favor");
         promedio = entrada.nextDouble();
         // edad
@@ -38,9 +44,10 @@ public class Ejemplo2 {
         if (promedio >= 7.5) {
             System.out.printf("Estudiante %s aprobado con un promedio: %.2f\n", 
                     miNombre, promedio);
-        }else{
-            System.out.printf("Estudiante reprobado con un "
-                    + "promedio: %.2f\n", promedio);
+        } else {
+            // Se agregó miNombre y el formato %s aquí también
+            System.out.printf("Estudiante %s reprobado con un "
+                    + "promedio: %.2f\n", miNombre, promedio);
         }
     }
     
