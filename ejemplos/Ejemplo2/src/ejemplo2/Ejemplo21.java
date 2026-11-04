@@ -50,10 +50,10 @@ public class Ejemplo21 {
         
         // Evaluación condicional y salida de datos
         if (promedio >= 7.5) {
-            System.out.printf("Estudiante %s  aprobado con un promedio: %.2f\n", 
+            System.out.printf("Estudiante %s (Edad: %d, Ciudad: %s) aprobado con un promedio: %.2f\n", 
                     miNombre, edad, ciudad, promedio);
         } else {
-            System.out.printf("Estudiante %s  reprobado con un promedio: %.2f\n", 
+            System.out.printf("Estudiante %s (Edad: %d, Ciudad: %s) reprobado con un promedio: %.2f\n", 
                     miNombre, edad, ciudad, promedio);
         }
     }
